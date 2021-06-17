@@ -2,6 +2,7 @@ import home1 from '../img/home1.png'
 import { About, Description, Image, Hide } from '../style'
 import { motion } from 'framer-motion'
 import { titleAnim, fade, photoAnim } from '../animation'
+import Waves from './Wave'
 
 const AboutSection = () => {
     return (
@@ -30,6 +31,7 @@ const AboutSection = () => {
             <Image>
                 <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
             </Image>
+            <Waves />
         </About>
     )
 }
